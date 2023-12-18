@@ -2,6 +2,6 @@
  và các phần tử còn lại vào một mảng mới "rest". */
 
 let array = [24,11,23,123,43534,1231]
-let [first, ...newArray] = array;
+let [first, ...rest] = array;
 console.log("First element",first);
-console.log("new array",newArray);
+console.log("Rest",rest);
