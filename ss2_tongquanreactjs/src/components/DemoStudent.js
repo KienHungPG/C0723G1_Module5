@@ -52,8 +52,8 @@ function DemoStudent(){
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
-                <StyledTableRow>
+              {rows.map((row,index) => (
+                <StyledTableRow key={index}>
                   <StyledTableCell align="left">{row.company}</StyledTableCell>
                   <StyledTableCell align="left">{row.contact}</StyledTableCell>
                   <StyledTableCell align="left">{row.country}</StyledTableCell>
