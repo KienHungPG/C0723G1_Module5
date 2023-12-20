@@ -10,11 +10,11 @@ const Todo = () => {
   };
 
   const handleAddItem = () => {
-    if (item !== "") {
-      setList([...list, item]);
-      setItem("");
-    }
-  };
+  if (item !== "") {
+    setList(prevList => [...prevList, item]);
+    setItem("");
+  }
+};
 
   return (
     <div style={{ textAlign: "center" }}>
